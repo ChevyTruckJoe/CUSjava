@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Methodspractice {
+public static void main(String[] args) {
+//Scanner decleration statement
+Scanner in = new Scanner(System.in);
+//Q1
+System.out.println("Enter a value: ");
+double w = in.nextDouble();
+System.out.println("Square root is: " + Math.sqrt(w));
+//Q2
+System.out.println("Enter a value: ");
+int a = in.nextInt();
+System.out.println("Factorial is: " + Methods.factorial(a));
+//Q3
+System.out.println("Enter a word: ");
+String sample = in.next();
+System.out.println("Now, Enter a letter that you wish to filter from the
+word: "+sample);
+char target = in.next().charAt(0);
+int count = Methods.test(sample, target);
+System.out.println("The character '" + target + "' appears " + count + "
+times in the string \"" + sample + "\".");
+//Q4
+System.out.println("Enter the base value: ");
+double base = in.nextDouble();
+System.out.println("Enter the exponent value: ");
+int exponent = in.nextInt();
+double result = Methods.power(base, exponent);
+System.out.println(base + " raised to the power of " + exponent + " is: " +
+result);
+//Q5
